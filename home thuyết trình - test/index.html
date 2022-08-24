@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../home thuyết trình - test/CSS/style.css">
+    <title>Nội thất </title>
+    <script src="https://kit.fontawesome.com/a80a9def81.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menubar">
+            <i class="fas fa-bars"></i>
+            <a href="./html/Đăng nhập.html"><i class="fa-solid fa-user" id="usermobile"></i></a>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="main">
+                    <div class="logo">
+                        <a href="../home thuyết trình/"><img src="../home thuyết trình - test/image/LOGO3.png" alt="logo1" style="width:180px; height: 70px;"></a>
+                    </div>
+                    <nav>
+                        <ul id="menu1-1">
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="./html/gioithieu.html">Giới thiệu</a></li>
+                            <li id="product"><a>Sản phẩm</a>
+                                <div class="menucon">
+                                    <ul id="menu1-2">   
+                                        <li id="product1"><a href="./html/phongngu.html" >Phòng ngủ</a></li>
+                                        <li><a href="./html/phongkhach.html" >Phòng khách</a></li>
+                                        <li><a href="./html/phongbep.html" >Phòng bếp</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#text">Liên hệ</a></li>
+                            <li><label for="search2"><i class="fa-solid fa-magnifying-glass" id="icon1"></i></label><input type="text" name="search" id="search2"></li>
+                            <li id="user"><a href="../home thuyết trình/html/Đăng nhập.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="bia">
+                <div class="bia1">
+                    <div class="logoinfor">
+                        <img src="./image/LOGO4.png" alt="logoinfor">
+                    </div>
+                    <div class="slogan">
+                        <h1>TẠO RA PHONG CÁCH CỦA BẠN</h1>
+                        <p>Mang đến cho ngôi nhà của bạn một phong cách mới</p>
+                        <a href="#mota1" class="button">Bắt đầu &#8594</a>  
+                    </div>
+                </div>
+                <div class="bia2">
+                    <img src="https://bizweb.dktcdn.net/100/408/246/themes/793234/assets/slider_1.png?1645591940267" alt="bia1" >
+                </div>
+            </div>
+        </div>
+    </header>
+        <div class="mota">
+            <h3 id="mota1">Sản phẩm nổi bật</h3>
+        </div>
+        <div class="hang">           
+             <div class="main" id="main1">
+                <div class="bia3" id="bia3-1">
+                    <img src="https://file.hstatic.net/1000280685/collection/1-7_dc4c9db64b6e42e6b6626eb15da0d581.png" alt="" >
+                </div>
+                <div class="bia3" id="bia3-2">
+                    <img src="https://file.hstatic.net/1000280685/collection/profile_den_1_chan_6028ad525d5c49f782f103e9a80a66f8.jpg" alt="" >
+                </div>
+                <div class="bia3" id="bia3-3">                    
+                    <img src="https://product.hstatic.net/1000280685/product/tranggo_2_4482221081ef43d3b19aabdc7b2b9d02_master.jpg" alt="" >
+                </div>
+            </div>
+        </div>
+        <div class="ds" id="ds1">
+            <ul>
+                <li><a href="./html/phongngu.html"><button id="ds1">Phòng ngủ</button></li></a>
+                <li><a href="./html/phongkhach.html"><button id="ds1">Phòng khách</button></li></a>
+                <li><a href="./html/phongbep.html"><button id="ds1">Phòng bếp</button></li></a>
+            </ul>
+        </div>
+        <div class="mota2">
+            <h3>Sản phẩm khác</h3>
+        </div>
+        <div class="hang">
+            <div class="small">
+                <div class="main">
+                    <div class="bia4" id="bia4-1">
+                        <img src="https://img.muji.net/img/item/4934761048888_1260.jpg" alt="" >
+                        <h4>Sản phẩm 1</h4>
+                        <p id="p1">250.000VND</p>
+                    </div>
+                    <div class="bia4" id="bia4-1">
+                        <img src="https://img.muji.net/img/item/4550344596098_1260.jpg" alt="" >
+                        <h4>Sản phẩm 2</h4>
+                        <p id="p1">900.000VND</p>
+                    </div>
+                    <div class="bia4" id="bia4-1">
+                        <img src="https://img.muji.net/img/item/4550182944518_400.jpg" alt="" >
+                        <h4>Sản phẩm 3</h4>
+                        <p id="p1">1.400.000VND</p>
+                    </div>
+                    <div class="bia4" id="bia4-1">
+                        <img src="https://img.muji.net/img/item/4550002850692_1260.jpg" alt="" >
+                        <h4>Sản phẩm 4</h4>
+                        <p id="p1">300.000VND</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('.menubar').click(function() {
+                    $('.container').slideToggle();
+
+                })
+
+                $('#product').click(function() {
+                    $('#menu1-2').slideToggle();
+                })
+            }) 
+
+        </script>
+      <!-- Site footer -->
+      <footer>
+        <div class="bioif">
+            <div class="bioif1">
+                <h3>JOIN US</h3>
+                <i class="fa-brands fa-youtube" id="bioif1-1"></i>
+                <i class="fa-brands fa-facebook" id="bioif1-1"></i>
+                <i class="fa-brands fa-twitter" id="bioif1-1"></i>
+            </div>
+            <div class="bioif2">
+                <h3>HƯỚNG DẪN</h3>
+                <div class="addlist">Điều khoản</div>
+                <div class="addlist">Hướng dẫn mua hàng</div>
+                <div class="addlist">Chính sách đổi trả</div>
+            </div>
+            <div class="bioif3">
+                <h3>CONTACTUS</h3>
+                <div class="addlist"><i class="fa-solid fa-store"></i> Cửa hàng 1: 999/9, Mai Hắc Đế, Phường Tân Thành, Thành Phố Buôn Ma Thuộc</div>
+                <div class="addlist"><i class="fa-solid fa-store"></i> Cửa hàng 2: 888/8, Mai Hắc Đế, Phường Tân Tiến, Thành Phố Buôn Ma Thuộc</div>
+                <div class="addlist"><i class="fa-solid fa-store"></i> Cửa hàng 3: 777/7, Mai Hắc Đế, Phường Tân Hòa, Thành Phố Buôn Ma Thuộc</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
